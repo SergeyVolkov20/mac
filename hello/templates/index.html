@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLIZEUM - Компьютерный клуб</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+         .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://avatars.mds.yandex.net/get-images-cbir/4472791/wmcCEAwwJ7NHishXofw8xg8261/orig') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+}
+        .price-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            height: 100%;
+        }
+        .price-highlight {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .btn-book {
+            background-color: #ffcc00;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: none;
+        }
+        .btn-book:hover {
+            background-color: #e6b800;
+        }
+        .section-title {
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #111;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .qr-code {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .price-header {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">COLIZEUM</a>
+            <span class="navbar-text">ARENA LOUNGE BAR</span>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 mb-4">COLIZEUM МИРА 55</h1>
+            <p class="lead mb-4">{{ description }}</p>
+            <p class="mb-4"><strong>{{ address }}</strong></p>
+            <a href="#booking" class="btn btn-book">ЗАБРОНИРОВАТЬ</a>
+        </div>
+    </section>
+
+    <!-- Информация о клубе -->
+     
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">COLIZEUM ARENA LOUNGE BAR</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>COLIZEUM Сургут - это компьютерный клуб, оснащенный передовым оборудованием, которое соответствует всем требованиям современных игр.</p>
+                    <h4 class="mt-4">АДРЕС: ПРОСПЕКТ МИРА 55, СУРГУТ</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">ЦЕНЫ</h2>
+            <p class="mb-4 text-center">Одиночное игровое место, современное оборудование и комфортная атмосфера.</p>
+            
+            <div class="row">
+                <!-- Левая колонка -->
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h4>17:00 - 08:00</h4>
+                        </div>
+                        <hr>
+                        <p class="price-highlight">140 ₽</p>
+                        <h5>1 час</h5>
+                        <p class="price-highlight">380 ₽</p>
+                        <h5>Пакет вечер</h5>
+                        <h5>3 часа (17:00 - 20:00)</h5>
+                         <p class="price-highlight">570 ₽</p>
+                        <h5>Пакет вечер</h5>
+                        <h5>5 часов (15:00 - 20:00)</h5>
+                    </div>
+                </div>
+                
+                <!-- Центральная колонка -->
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h4>Ночной тариф</h4>
+                        </div>
+                    
+                        <hr>
+                          <p class="price-highlight">550 ₽</p>
+                        <h5>Пакет Ночь</h5>
+                        <h5>10 часов (22:00 - 08:00)</h5>
+                      
+                    </div>
+                </div>
+                
+                <!-- Правая колонка -->
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h4>08:00 - 17:00</h4>
+                        </div>
+                    
+                        <hr>
+                         <p class="price-highlight">120 ₽</p>
+                        <h5>1 час</h5>
+                    
+                        <p class="price-highlight">320 ₽</p>
+                        <h5>Пакет День</h5>
+                        <p>4 часа (12:00 - 16:00)</p>
+                        <p class="price-highlight">490 ₽</p>
+                        <h5>Пакет День</h5>
+                        <p>6 часов (12:00 - 18:00)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section id="booking" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">БРОНИРОВАНИЕ</h2>
+            <p class="mb-4">Забронируйте место через QR-код на вашем телефоне</p>
+            
+            <div class="qr-code mb-4">
+                <!-- Замените на реальный QR-код -->
+                <img src="https://via.placeholder.com/200x200/000/fff?text=QR-CODE" alt="QR код для бронирования">
+            </div>
+            
+            <p>Наведите камеру телефона на QR-код для перехода к бронированию</p>
+            <a href="#" class="btn btn-book mt-3">ЗАБРОНИРОВАТЬ ОНЛАЙН</a>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 COLIZEUM. Все права защищены.</p>
+            <p>Проспект Мира 55, Сургут</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
