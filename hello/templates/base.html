@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}COLIZEUM - Компьютерный клуб{% endblock %}</title>
     
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Custom CSS -->
     <style>
         body {
             background-color: #0a0a0a;
@@ -72,7 +70,6 @@
     </style>
 </head>
 <body>
-    <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">COLIZEUM</a>
@@ -95,20 +92,17 @@
         </div>
     </nav>
 
-    <!-- Контент -->
     <main>
         {% block content %}
         {% endblock %}
     </main>
 
-    <!-- Футер -->
     <footer>
         <div class="container text-center">
             <p>&copy; 2023 COLIZEUM. Все права защищены.</p>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
